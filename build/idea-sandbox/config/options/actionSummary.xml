@@ -1,0 +1,52 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="2" l="1649154156055" />
+    </e>
+    <e n="$Undo">
+      <i c="2" l="1634747978937" />
+    </e>
+    <e n="About">
+      <i c="1" l="1634815323555" />
+    </e>
+    <e n="CloseProject">
+      <i c="1" l="1634815395489" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="23" l="1651638252440" />
+    </e>
+    <e n="EditorCopy">
+      <i c="3" l="1634007853326" />
+    </e>
+    <e n="SaveAll">
+      <i c="1" l="1634747981033" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1634815330762" />
+    </e>
+    <e n="TabList">
+      <i c="2" l="1649154117709" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="2" l="1634403705692" />
+    </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="1" l="1634875865709" />
+    </e>
+    <e n="com.intellij.ide.plugins.PluginManagerConfigurable$InstallFromDiskAction">
+      <i c="1" l="1634815379374" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginDetailsPageComponent$UninstallAction">
+      <i c="1" l="1634815366874" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+      <i c="4" l="1634815378238" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1651638269779" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="2" l="1649154135795" />
+    </e>
+  </component>
+</application>

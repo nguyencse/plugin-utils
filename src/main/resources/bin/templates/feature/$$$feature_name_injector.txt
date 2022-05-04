@@ -1,0 +1,21 @@
+import 'package:$$$package_name/features/$$$feature_name/data/datasources/$$$feature_name_remote_data_source.dart';
+import 'package:$$$package_name/features/$$$feature_name/data/repositories/$$$feature_name_repository_impl.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/usecases/fetch_$$$feature_name_usecase.dart';
+
+final _injector = _Injector();
+
+////  expose dependencies
+final fetch$$$FeatureNameUseCase = _injector.fetch$$$FeatureNameUseCase;
+
+class _Injector {
+  _Injector._internal();
+
+  static final _singleton = _Injector._internal();
+
+  factory _Injector() => _singleton;
+
+  //// the dependencies
+  $$$FeatureNameRemoteDataSourceImpl get $$$featureNameRemoteDataSourceImpl => $$$FeatureNameRemoteDataSourceImpl();
+  $$$FeatureNameRepositoryImpl get $$$featureNameRepositoryImpl => $$$FeatureNameRepositoryImpl($$$featureNameRemoteDataSource: $$$featureNameRemoteDataSourceImpl);
+  Fetch$$$FeatureNameUseCase get fetch$$$FeatureNameUseCase => Fetch$$$FeatureNameUseCase($$$featureNameRepositoryImpl);
+}

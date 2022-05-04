@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.nguyencse.utils</id>
+    <name>Utils</name>
+    <vendor email="nguyencse.ninhhoa@gmail.com" url="https://nguyencse.github.io/">Nguyen Y Nguyen</vendor>
+
+    <description><![CDATA[
+    Utils - Contain several tools for quick development
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <idea-version since-build="191"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="Utils.TopMenu"
+               text="_Utils"
+               description="Contain several tools for quick development">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="actions.create_feature_bloc"
+                    class="actions.CreateFeatureBlocAction"
+                    text="Create Feature (with Flutter Bloc)"
+                    description="Create an feature for clean architecture with flutter bloc"/>
+        </group>
+    </actions>
+</idea-plugin>

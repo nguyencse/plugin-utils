@@ -1,0 +1,35 @@
+part of '$$$feature_name_bloc.dart';
+
+enum PDStateStatus {
+  init,
+  loading,
+  hide_loading,
+  loaded_success,
+  loaded_failed,
+}
+
+class PDState extends Equatable {
+  final PDStateStatus? status;
+  final $$$FeatureNameEntity? detail;
+  final String? errorMessage;
+
+  PDState({
+    this.status,
+    this.detail,
+    this.errorMessage,
+  });
+
+  PDState copyWith({
+    PDStateStatus? status,
+    $$$FeatureNameEntity? detail,
+    String? errorMessage,
+  }) =>
+      PDState(
+        status: status ?? this.status,
+        detail: detail ?? this.detail,
+        errorMessage: errorMessage ?? this.errorMessage,
+      );
+
+  @override
+  List<Object> get props => [status ?? '', detail ?? '', errorMessage ?? ''];
+}

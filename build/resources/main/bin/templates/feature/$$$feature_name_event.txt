@@ -1,0 +1,15 @@
+part of '$$$feature_name_bloc.dart';
+
+abstract class PDEvent extends Equatable {
+  @override
+  List<Object> get props => [];
+}
+
+class EventFetch$$$FeatureName extends PDEvent {
+  final String id;
+
+  EventFetch$$$FeatureName({required this.id});
+
+  @override
+  List<Object> get props => [id];
+}

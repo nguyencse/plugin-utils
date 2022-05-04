@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<tutorialBundle
+    name="What's New"
+    resourceRoot="/"
+    stepByStep="false"
+    hideStepIndex="true"
+    version="2020.3.1.15">
+  <feature
+      name="What's New in Arctic Fox">
+    <tutorial
+        key="whats-new"
+        label=" What's New in Arctic Fox"
+        icon="stable/whats_new_icon.png"
+        remoteLink="https://developer.android.com/studio/releases#arctic-fox"
+        remoteLinkLabel="Read in a browser">
+      <description>
+        <![CDATA[
+          This panel describes some of the new features and behavior changes
+          included in this update.
+          <br><br>
+          To open this panel again later, select <b>Help &gt; What's New in Android Studio</b>
+          from the main menu.
+          ]]>
+      </description>
+      <step label="Version numbering for Android Studio">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>We have changed the version numbering system for Android Studio to more closely
+              align with <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>, the IDE upon
+              which Android Studio is built.
+              </p>
+              <br />
+              <p>In the previous numbering system, this would have been Android Studio 4.3.
+              With the new numbering system, it is now
+              Android Studio Arctic Fox | 2020.3.1.
+              </p>
+              <br>
+              <a href="https://d.android.com/studio/releases?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#new-version-numbering">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Version numbering for Android Gradle plugin">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>We are updating the version numbering for Android Gradle plugin (AGP) to
+              more closely match the underlying Gradle build tool.
+              </p>
+              <br />
+              <p>AGP 7.0 is the version that follows AGP 4.2. AGP 7.0 is being
+              released concurrently with Android Studio Arctic Fox | 2020.3.1.
+              </p>
+              <br />
+              <a href="https://developer.android.com/studio/releases/gradle-plugin?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#versioning-update">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Support for Jetpack Compose">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <a href="http://d.android.com/jetpack?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-preview">Jetpack Compose</a>
+              is a modern toolkit for building native Android UI. The toolkit also brings all of
+              Kotlin's benefits, such as helping you to write concise and idiomatic code that's
+              fully interoperable with Java.
+              <br><br>
+              When using Android Studio to develop your app with Jetpack Compose, you benefit from
+              smart editor features, such as a New Project template, code completion enhancements,
+              and a live preview of your Compose UI.
+              <br><br>
+              <a href="https://developer.android.com/studio/releases?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#jetpack-compose-tooling">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Compose support in Layout Inspector">
+        <stepElement>
+          <section>
+            <![CDATA[
+            <p>You can now inspect layouts
+            written with the new Android declarative UI framework, Jetpack Compose. Whether
+            your app uses layouts fully written in Compose or layouts that use a hybrid of
+            Compose and Views, the Layout Inspector helps you understand how your layouts
+            are rendered on your running device.
+            </p>
+            <br />
+            <p>
+            To get started, deploy your app to a connected device and then open the
+            <b>Layout Inspector</b> window by
+            selecting <b>View > Tool Windows > Layout Inspector</b>. If the Layout Inspector
+            doesn't automatically connect to your app process, select the desired app
+            process from the process pulldown. You should soon see your app's layout
+            rendered in the tool window. To get started inspecting your Compose layout,
+            select the layout component visible in the rendering or select it from the
+            <b>Component Tree</b>.
+            </p>
+            <br />
+            <p>
+            <img src="https://d.android.com/studio/releases/assistant/2020.3.1/compose-layout-inspector-wna.png">
+            </p>
+            <br />
+             <br />
+              <a href="https://d.android.com/r/studio-wna/layout-inspector-compose">Learn more</a>
+              <br>
+              <br>
+
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Export data from the Database Inspector">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>You can now easily export databases, tables, and query results from the
+              <a href="https://d.android.com/studio/inspect/database">Database Inspector</a> to save, share, or recreate
+              locally. When you open up an app project in Android Studio and inspect the
+              app for that project in the Database Inspector, you can start exporting data
+              in one of the following ways:</p>
+              <br />
+              <ul>
+              <li>Select a database or table in the <strong>Databases</strong> panel and click
+              <strong>Export to file</strong> <img src="https://d.android.com/studio/images/buttons/db-inspector-export-button.png" width="19" height="19">
+              near the top of the panel.</li>
+              <li>Right-click on a database or table in the <strong>Databases</strong> panel and select
+              <strong>Export to file</strong> from the context menu.</li>
+              <li>When inspecting a table or query results in a tab, click
+              <strong>Export to file</strong> <img src="https://d.android.com/studio/images/buttons/db-inspector-export-button.png" width="19" height="19">
+              above the table or query results.</li>
+              </ul>
+              <br />
+
+              <p>After selecting an export action, you should see the <strong>Export</strong> dialog to help
+              you through the final steps, as shown below. Depending on whether you are
+              trying to export a database, table, or query results, you have the option of
+              exporting the data in one or more of the following formats: DB, SQL, or CSV.</p>
+              <br />
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="StateFlow support in data binding">
+        <stepElement>
+          <section>
+            <![CDATA[
+            For Kotlin apps that use coroutines, you can now use
+            <code>StateFlow</code>
+            objects as a data binding source to automatically notify the UI about
+            changes in the data. Your data bindings will be lifecycle aware and
+            will only be triggered when the UI is visible on the screen.
+            <br />
+            <br />
+            <p>To use a <code>StateFlow</code> object with your binding class, you need to specify a
+            lifecycle owner to define the scope of the <code>StateFlow</code> object, and in your
+            layout, assign the properties and methods of your <code>ViewModel</code> component to
+            the corresponding views using binding expressions, as shown in the following
+            snippets:
+            </p>
+            <br />
+<pre>
+class ViewModel() {
+   val username: StateFlow<String>
+}
+</pre>
+          <br />
+<pre>
+&lt;TextView
+    android:id="@+id/name"
+    android:text="@{viewmodel.username}" /&gt;
+</pre>
+          <br />
+          <br />
+            <p>If you're in a Kotlin app that uses AndroidX, <code>StateFlow</code> support is
+            automatically included in the functionality of data binding, including the
+            coroutines dependencies.
+          </p>
+          <br />
+          <p>
+            <a href="https://d.android.com/topic/libraries/data-binding/observability#lifecycle-objects">Learn more</a>
+          <br />
+          <br />
+          ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Use Java 11 source code in your project">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>You can now compile up to Java 11 source code in your app’s
+                project, enabling you to use newer language features like private
+                interface methods, the diamond operator for anonymous classes, and
+                local variable syntax for lambda parameters.
+              </p>
+              <br />
+              <p>To enable this feature, set
+                <code>compileOptions</code> to the desired Java version and set
+                <code>compileSdkVersion</code> to 30 or above.
+              </p>
+              <br />
+              <a href="https://developer.android.com/studio/releases/gradle-plugin?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#java-11">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="New Background Task Inspector">
+        <stepElement>
+          <section>
+            <![CDATA[
+            <p>The new <b>Background Task Inspector</b> helps you visualize, monitor, and debug your
+            app's background workers when using
+            <a href="https://d.android.com/jetpack/androidx/releases/work">WorkManager library</a>
+            <code>2.5.0</code> or higher.
+            </p>
+            <br />
+            <p>To view the <b>Background Task Inspector</b>, select
+            <b>View > Tool Windows > App Inspection</b>
+            from the menu bar. When you deploy an app using WorkManager <code>2.5.0</code> or
+            higher on a device running API level 26 and higher, you should see active
+            workers in the <b>Background Task Inspector</b> tab.
+            </p>
+            <br />
+            <img src="https://d.android.com/studio/releases/assistant/2020.3.1/bg-task-inspector-wna.png" />
+            <br /><br />
+            <p>You can then select a worker from the table to see more detailed information,
+            such as a description of the worker, how it was executed, details of its
+            worker chain, and the result of the execution of the worker.
+            </p>
+            <br />
+            <img src="https://d.android.com/studio/releases/assistant/2020.3.1/workmanager-details-wna.png" />
+            <br /><br />
+            <p>To help you investigate issues from workers that fail execution, you can stop
+            a currently running or enqueued worker by selecting it from the table and
+            clicking <b>Cancel Selected Worker</b> <img src="https://d.android.com/studio/images/buttons/workmanager-cancel.png" />
+            from the toolbar. You can also filter workers in the table by tags you’ve
+            assigned to them using the <b>All tags</b> dropdown menu.
+            </p>
+            <br />
+            <p>If you want to see a visual representation of a worker chain, select a worker
+              from the table and click <b>Show Graph View</b> <img src="https://d.android.com/studio/images/buttons/workmanager-show-graph-view.png" />
+              from the toolbar. You can then select any worker in the chain to see its
+              details, or stop it if it’s currently enqueued or running. To return to the
+              table, click <b>Show List View</b> <img src="https://d.android.com/studio/images/buttons/workmanager-list-view.png" />.
+            </p>
+            <br />
+              <a href="https://d.android.com/studio/releases?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#bti">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="AGP: Dependency configurations removed">
+        <stepElement>
+          <section>
+            <![CDATA[
+          In Android Gradle Plugin 7.0, the following configurations (or dependency scopes) have
+          been removed:
+<br />
+<br />
+<ul>
+  <li><code>compile</code>
+    <br />Replaced by either
+      <a href="https://d.android.com/studio/build/dependencies#api"><code>api</code></a>
+    or <a href="https://d.android.com/studio/build/dependencies#implementation"><code>implementation</code></a>.
+    <br /> Also applies to <em>*Compile</em> variants, for example: <code>debugCompile</code>.
+  </li>
+  <li><code>provided</code>
+  <br />Replaced by
+  <a href="https://d.android.com/studio/build/dependencies#compileOnly"><code>compileOnly</code></a>.
+  <br />Also applies to <em>*Provided</em> variants, for example: <code>releaseProvided</code>.
+</li>
+<li><code>apk</code>
+  <br />Replaced by
+  <a href="https://d.android.com/studio/build/dependencies#runtimeOnly"><code>runtimeOnly</code></a>.
+</li>
+<li><code>publish</code>
+  <br />Replaced by
+  <a href="https://d.android.com/studio/build/dependencies#runtimeOnly"><code>runtimeOnly</code></a>.
+</li>
+</ul>
+<p>In most cases, the
+<a href="https://d.android.com/studio/releases?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#upgrade-assistant-agp">AGP Upgrade Assistant</a>
+  will automatically migrate your project to the new configurations.
+</p>
+<br />
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Android Studio now uses Gradle test runner">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>To improve overall consistency of test executions, Android Studio now uses
+              Gradle to run all unit tests by default.
+              </p>
+              <br />
+              <p>In many cases, this change will not
+              affect your testing workflow in the IDE. However, if you're using custom Android
+              JUnit run configurations, you will need to migrate these configurations to Gradle
+              run configurations.
+              </p>
+             <br>
+<a href="https://d.android.com/studio/releases?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable#test-configurations">Learn more</a>
+              <br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Accessibility Scanner for Layout Editor">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>
+              Android Studio now integrates with the Android Accessibility Test Framework to help
+              you find accessibility issues in your layouts. When using the Layout Editor, click on
+              the error report button to launch the panel. The tool will report accessibility
+              related issues and also offers suggested fixes for some common problems (such as,
+              missing content descriptions, or low contrast)
+              </p>
+              <br />
+              <img src="https://d.android.com/studio/releases/assistant/4.2.0/accessibility-scanner-wna.png"/>
+              <br /><br />
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Run multi-device tests in parallel">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <br>
+              <img src="https://d.android.com/studio/releases/assistant/4.2.0/instrumentation-test-panel-wna.png"
+                   width="428">
+              <br><br>
+              Instrumentation tests can now be run
+              across multiple devices in parallel and investigated using the new Test Matrix tool
+              window. Using this tool window, you can more easily determine which tests are failing
+            across various device configurations.
+
+              <br><br>Testing your app across a wide variety of API levels and form factors is one
+              of the best ways to ensure that all users have a great experience when using your app.
+              <br><br>
+              <a href="https://d.android.com/studio/test?utm_source=android-studio-2020-3-1&utm_medium=studio-assistant-stable##instrumentation-testing">Learn more</a>
+              <br>
+              <br>
+            ]]>
+          </section>
+        </stepElement>
+      </step>
+      <step label="Extended controls in the Emulator tool window">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <p>
+                  Developers now have access to all extended emulator controls when the emulator is
+                  opened in a tool window. The extended controls give developers powerful tools for
+                  testing apps, such as navigation playback and virtual sensors, all
+              within Android Studio.
+              </p>
+              <br />
+              <p>To make the Android Emulator launch inside Studio, go to <b> File&nbsp;> Settings&nbsp;>
+                  Tools&nbsp;> Emulator </b> and select <i>Launch in a tool window</i>.
+              </p>
+            ]]>
+          </section>
+        </stepElement>
+        <stepElement>
+          <action
+            key="android.emulator.open.settings"
+            label="Open Emulator Settings">
+          </action>
+        </stepElement>
+      </step>
+      <footerStep label="">
+        <stepElement>
+          <section>
+            <![CDATA[
+              <br><em>Last updated 7/27/2021</em><br><br>
+            ]]>
+          </section>
+        </stepElement>
+      </footerStep>
+    </tutorial>
+  </feature>
+</tutorialBundle>

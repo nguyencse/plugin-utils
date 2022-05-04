@@ -1,0 +1,138 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:$$$package_name/features/$$$feature_name/di/$$$feature_name_injector.dart';
+import 'package:$$$package_name/features/$$$feature_name/presentation/blocs/$$$feature_name_bloc.dart';
+
+class $$$FeatureNamePage extends StatefulWidget {
+  const $$$FeatureNamePage({Key? key, this.arguments}) : super(key: key);
+  final Map<String, dynamic>? arguments;
+
+  @override
+  _$$$FeatureNamePageState createState() => _$$$FeatureNamePageState();
+}
+
+class _$$$FeatureNamePageState extends State<$$$FeatureNamePage> {
+  bool _isLoading = false;
+  PDBloc? _pdBloc;
+
+  @override
+  void initState() {
+    _pdBloc = PDBloc(fetch$$$FeatureNameUseCase: fetch$$$FeatureNameUseCase);
+    _get$$$FeatureName();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _pdBloc = null;
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (_) => _pdBloc,
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: _widgetAppBar(title: ''),
+        body: _buildBody(),
+      ),
+    );
+  }
+
+  Widget _buildBody() {
+    return Stack(
+      children: [
+        BlocBuilder<PDBloc, PDState>(
+          buildWhen: (previous, current) {
+            return current.status == PDStateStatus.loaded_success ||
+                current.status == PDStateStatus.loaded_failed;
+          },
+          builder: (_, state) {
+            if (state.status == PDStateStatus.loaded_success) {
+              return SafeArea(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: Center(child: Text('Welcome!')),
+                    ),
+                  ],
+                ),
+              );
+            } else if (state.status == PDStateStatus.loaded_failed) {
+              return Container(color: Colors.red);
+            } else {
+              return const SizedBox();
+            }
+          },
+        ),
+        BlocListener<PDBloc, PDState>(
+          listenWhen: (previous, current) {
+            return current.status == PDStateStatus.loading || current.status == PDStateStatus.hide_loading;
+          },
+          listener: (_, state) {
+            switch (state.status) {
+              case PDStateStatus.loading:
+                _handleLoadingData(true);
+                break;
+              case PDStateStatus.hide_loading:
+                _handleLoadingData(false);
+                break;
+              default:
+            }
+          },
+          child: _widgetLoading(_isLoading),
+        ),
+      ],
+    );
+  }
+
+  PreferredSize _widgetAppBar({String? title}) => PreferredSize(
+        child: AppBar(
+          shape: const Border(
+            bottom: const BorderSide(
+              color: Colors.grey,
+              width: 1,
+            ),
+          ),
+          backgroundColor: Colors.white,
+          backwardsCompatibility: false,
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+            statusBarIconBrightness: Brightness.dark,
+          ),
+          elevation: 0,
+          leading: BackButton(color: Colors.black),
+          title: Text('$title'),
+          centerTitle: true,
+        ),
+        preferredSize: const Size.fromHeight(44),
+      );
+
+  Widget _widgetLoading(bool isLoading) {
+    if (isLoading) {
+      return Positioned.fill(
+        child: Container(
+          color: Colors.transparent, // set to disable gesture on screen
+          child: Center(child: Text('Loading...')),
+        ),
+      );
+    }
+    return const SizedBox();
+  }
+
+  void _handleLoadingData(bool loading) {
+      setState(() {
+        _isLoading = loading;
+      });
+  }
+
+  void _get$$$FeatureName() {
+    _pdBloc?.add(EventFetch$$$FeatureName(id: 'xxx'));
+  }
+}

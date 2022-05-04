@@ -1,0 +1,108 @@
+AWT-EventQueue-0, TID: 26 [100ms]
+
+Reference Handler, TID: 2 [100ms]
+
+Finalizer, TID: 3 [100ms]
+
+Signal Dispatcher, TID: 4 [100ms]
+
+JDWP Transport Listener: dt_socket, TID: 10 [100ms]
+
+JDWP Event Helper Thread, TID: 11 [100ms]
+
+JDWP Command Reader, TID: 12 [100ms]
+
+Common-Cleaner, TID: 13 [100ms]
+
+DestroyJavaVM, TID: 15 [100ms]
+
+Periodic tasks thread, TID: 16 [100ms]
+
+ApplicationImpl pooled thread 1, TID: 17 [100ms]
+
+ApplicationImpl pooled thread 2, TID: 18 [100ms]
+
+process reaper, TID: 19 [100ms]
+
+EDT Performance Checker, TID: 20 [100ms]
+
+ApplicationImpl pooled thread 4, TID: 22 [100ms]
+
+Java2D Disposer, TID: 24 [100ms]
+
+AWT-XAWT, TID: 25 [100ms]
+
+AWT-Shutdown, TID: 27 [100ms]
+
+Netty Builtin Server 1, TID: 29 [100ms]
+
+Netty Builtin Server 2, TID: 30 [100ms]
+
+ApplicationImpl pooled thread 5, TID: 31 [100ms]
+
+ApplicationImpl pooled thread 6, TID: 32 [100ms]
+
+ApplicationImpl pooled thread 7, TID: 33 [100ms]
+
+ApplicationImpl pooled thread 8, TID: 34 [100ms]
+
+JobScheduler FJ pool 0/5, TID: 37 [100ms]
+
+ApplicationImpl pooled thread 9, TID: 38 [100ms]
+
+DirectBufferWrapper allocation thread, TID: 39 [100ms]
+
+Netty Builtin Server 3, TID: 40 [100ms]
+
+ApplicationImpl pooled thread 10, TID: 41 [100ms]
+
+fsnotifier64, TID: 42 [100ms]
+
+BaseDataReader: output stream of fsnotifier64, TID: 43 [100ms]
+
+BaseDataReader: error stream of fsnotifier64, TID: 44 [100ms]
+
+process reaper, TID: 45 [100ms]
+
+ApplicationImpl pooled thread 11, TID: 46 [100ms]
+
+QuantumRenderer-0, TID: 47 [100ms]
+
+InvokeLaterDispatcher, TID: 49 [100ms]
+
+JavaFX Application Thread, TID: 50 [100ms]
+
+TimerQueue, TID: 54 [100ms]
+
+JobScheduler FJ pool 1/5, TID: 56 [100ms]
+
+JobScheduler FJ pool 2/5, TID: 57 [100ms]
+
+JobScheduler FJ pool 3/5, TID: 58 [100ms]
+
+JobScheduler FJ pool 4/5, TID: 59 [100ms]
+
+Timer-0, TID: 60 [100ms]
+
+Batik CleanerThread, TID: 62 [100ms]
+
+I/O pool 4, TID: 63 [100ms]
+
+Monitor, TID: 64 [100ms]
+
+Device Client Monitor, TID: 68 [100ms]
+
+Device List Monitor, TID: 69 [100ms]
+
+ClangdRequestsPlanner [main], TID: 70 [100ms]
+
+I/O pool 5, TID: 74 [100ms]
+
+I/O pool 6, TID: 75 [100ms]
+
+CLang Server Accessor [main], TID: 78 [100ms]
+
+Symtable RecursiveSymbolBuilding, TID: 79 [100ms]
+
+pool-4-thread-1, TID: 80 [100ms]
+

@@ -1,0 +1,8 @@
+import 'package:dartz/dartz.dart';
+import 'package:$$$package_name/features/$$$feature_name/core/error/failures.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/entities/$$$feature_name_entity.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/usecases/fetch_$$$feature_name_usecase.dart';
+
+abstract class $$$FeatureNameRepository {
+  Future<Either<OGPDFailure, $$$FeatureNameEntity>> fetch$$$FeatureName({required FetchPDParams params});
+}

@@ -1,0 +1,4 @@
+"MissingAWTThread" tid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+     Frozen for 5secs
+	at com.android.tools.idea.diagnostics.ThreadSamplingReportContributor.missingEdtStack(Unknown source)

@@ -1,0 +1,14 @@
+lib/features/$$$feature_name/core/error/exceptions.txt
+lib/features/$$$feature_name/core/error/failures.txt
+lib/features/$$$feature_name/core/usecases/usecase.txt
+lib/features/$$$feature_name/di/$$$feature_name_injector.txt
+lib/features/$$$feature_name/data/datasources/$$$feature_name_remote_data_source.txt
+lib/features/$$$feature_name/data/repositories/$$$feature_name_repository_impl.txt
+lib/features/$$$feature_name/data/responses/$$$feature_name_response.txt
+lib/features/$$$feature_name/domain/entities/$$$feature_name_entity.txt
+lib/features/$$$feature_name/domain/repositories/$$$feature_name_repository.txt
+lib/features/$$$feature_name/domain/usecases/fetch_$$$feature_name_usecase.txt
+lib/features/$$$feature_name/presentation/blocs/$$$feature_name_bloc.txt
+lib/features/$$$feature_name/presentation/blocs/$$$feature_name_event.txt
+lib/features/$$$feature_name/presentation/blocs/$$$feature_name_state.txt
+lib/features/$$$feature_name/presentation/pages/$$$feature_name_page.txt

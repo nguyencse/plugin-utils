@@ -1,0 +1,33 @@
+import 'package:dartz/dartz.dart';
+import 'package:$$$package_name/features/$$$feature_name/core/error/exceptions.dart';
+import 'package:$$$package_name/features/$$$feature_name/core/error/failures.dart';
+import 'package:$$$package_name/features/$$$feature_name/data/datasources/$$$feature_name_remote_data_source.dart';
+import 'package:$$$package_name/features/$$$feature_name/data/responses/$$$feature_name_response.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/entities/$$$feature_name_entity.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/repositories/$$$feature_name_repository.dart';
+import 'package:$$$package_name/features/$$$feature_name/domain/usecases/fetch_$$$feature_name_usecase.dart';
+
+class $$$FeatureNameRepositoryImpl implements $$$FeatureNameRepository {
+  $$$FeatureNameRemoteDataSource $$$featureNameRemoteDataSource;
+
+  $$$FeatureNameRepositoryImpl({required this.$$$featureNameRemoteDataSource});
+
+  @override
+  Future<Either<OGPDFailure, $$$FeatureNameEntity>> fetch$$$FeatureName({required FetchPDParams params}) async {
+    try {
+      var _response = await $$$featureNameRemoteDataSource.fetch$$$FeatureName(id: params.id);
+      return Right(_mapPDResponseToEntity(response: _response));
+    } on ServerException {
+      return Left(OGPDFailure(errorType: PDErrorType.SERVER));
+    } catch (e) {
+      return Left(OGPDFailure(errorType: PDErrorType.SERVER));
+    }
+  }
+
+  $$$FeatureNameEntity _mapPDResponseToEntity({required $$$FeatureNameResponse response}) {
+    return $$$FeatureNameEntity(
+      id: response.id,
+      name: response.name,
+    );
+  }
+}
