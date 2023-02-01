@@ -1,8 +1,0 @@
-actions/CreateFeatureBlocAction.java
- actions.CreateFeatureBlocAction
-ui/FeatureCreator.java
- ui.FeatureCreator
- ui.FeatureCreator$1
- ui.FeatureCreator$DialogCallBack
-helpers/FeatureHelper.java
- helpers.FeatureHelper
